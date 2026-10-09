@@ -1,0 +1,21 @@
+{
+  "name": "aeditor-kernel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Markdown 实时渲染内核 —— 以 op log 为心脏的增量计算引擎（设计文档 MVP 可执行用例）",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "demo": "node examples/demo.ts",
+    "minimal": "node examples/minimal.ts",
+    "render": "node examples/render-cli.ts",
+    "test": "node --test --experimental-test-isolation=none test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.9.3"
+  }
+}
